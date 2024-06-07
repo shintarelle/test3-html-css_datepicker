@@ -1,0 +1,259 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.page {
+    position: relative;
+}
+
+.page__front-image {
+    position: absolute;
+    top: -20px;
+    z-index: 0;
+}
+
+/*--------------------------- Header --------------------------------*/
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 172px;
+    background-color: rgba(255, 255, 255, 0.67);
+    width: 100%;
+    z-index: 10;
+}
+
+.header__logo {
+  position: absolute;
+  opacity: 1 !important;
+  z-index: 20;
+  left: 355px;
+  top: 10px
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header__start-date {
+    border: 2px solid #48A9E6;
+    border-radius: 0.125rem;
+    font-size: 13px;
+    color: #48A9E6;
+    padding: 7px 12px;
+}
+
+.header__stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+.header__stat {
+    display: flex;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.header__stat-number {
+    font-weight: bold;
+}
+
+.header__stat-text {
+    font-weight: normal;
+}
+
+
+
+/* --------------------------- Main  --------------------------------*/
+.main {
+    position: relative;
+    z-index: 10;
+    padding-bottom: 30px;
+}
+
+.main__container {
+    margin: 0 auto;
+    max-width: 836px;
+}
+
+.main__content {
+  padding: 0 5px;
+}
+.main__back-image {
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+    right: 0;
+}
+
+.content__tabs {
+  padding: 23px 5px;
+  display: flex;
+  justify-content: end;
+}
+
+.content__tab {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.content__tab--titles {
+  margin-right: 24px;
+}
+
+.content__tab--active {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.content__cards {
+  margin-bottom: 30px;
+}
+
+.content__cards--rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content__cards--titles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  display: none;
+}
+
+.content__load-more {
+  display: flex;
+  justify-content: center;
+}
+
+.content__load-more-button {
+  background-color: transparent;
+  padding: 8px 27px;
+  border: 1px solid #858585;
+  border-radius: 20px;
+  color: #858585;
+  font-weight: 500;
+}
+/*--------------- card-row -------------------*/
+.rowcard {
+  background-color: white;
+  display: flex;
+}
+.rowcard__image {
+  width: 86px;
+  height: 86px;
+}
+.rowcard__info {
+  display: flex;
+  gap: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+.rowcard__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  flex-grow: 1;
+}
+.rowcard__info-title {
+  font: 16px;
+}
+.rowcard__info-datawrapper{
+  display: flex;
+  gap: 18px;
+}
+.rowcard__info-likes {
+  display: flex;
+  gap: 6px;
+}
+.info-icon {
+  width: 18px;
+  height: 18px;
+}
+.rowcard__info-text {
+  font-size: 14px;
+}
+
+/*------titles card ---*/
+
+.titlescard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.titlescard__image {
+  width: 203px;
+  height: 203px;
+}
+.titlescard__wrapper {
+  padding: 12px;
+  font-weight: 500;
+}
+.titlescard__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.titlescard__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+.grow {
+  flex-grow: 1;
+}
+.titlescard__info-title {
+  font-size: 16px;
+  line-height: 24px;
+}
+.titlescard__info-datawrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.titlescard__upload-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+.titlescard__upload-title {
+  font-size: 14px;
+  align-self: center;
+}
+.titlescard__upload-text {
+  font-size: 12px;
+  align-self: center;
+}
+
+
+/*------------------------- footer -------------------------*/
+
+.footer {
+  height: 105px;
+}
