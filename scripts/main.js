@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
 
           <div class="rowcard__info-wrapper">
-            <p class="rowcard__info-title">Image upload</p>
-            <p class="rowcard__info-text">9-08-2016</p>
+            <p class="rowcard__upload-title">Image upload</p>
+            <p class="rowcard__upload-text">9-08-2016</p>
           </div>
 
         </div>
@@ -239,3 +239,11 @@ document.addEventListener('DOMContentLoaded', function() {
   renderTitlesCards();
   setActiveTab('rows');
 });
+
+//
+document.addEventListener('DOMContentLoaded', function() {
+      flatpickr(".flatpickr", {
+        wrap: true,
+        dateFormat: "d.m.Y",
+      });
+    });
